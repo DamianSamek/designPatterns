@@ -46,8 +46,8 @@ public class Vehicle {
 		this.vin = vin;
 	}
 	
-	public String getName() {
-		return "";
+	public VehicleType getType() {
+		return null;
 	}
 
 }

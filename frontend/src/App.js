@@ -93,7 +93,6 @@ class App extends Component {
         <Row>
           <Col lg="10">
             <div style={{
-            height: '90%',
             overflowY: 'auto'
           }}>
             <Table striped hover>
@@ -117,7 +116,7 @@ class App extends Component {
                       <td>{data.manufacturerModel.manufacturer}</td>
                       <td>{data.manufacturerModel.model}</td>
                       <td>{data.vin}</td>
-                      <td>{data.name}</td>
+                      <td>{data.type.name}</td>
                       <td>{data.state.state.name}</td>
                       <td><Button color="primary" size="sm" onClick={() => this.setVehicleState(index, 'FREE')} >WOLNY</Button>
                         <Button color="secondary" size="sm" onClick={() => this.setVehicleState(index, 'BORROWED')} >WYPOŻ.</Button>

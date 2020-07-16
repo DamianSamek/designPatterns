@@ -7,8 +7,8 @@ public class Car extends Vehicle {
 	}
 	
 	@Override
-	public String getName() {
-		return "Osobowy";
+	public VehicleType getType() {
+		return VehicleType.CAR;
 	}
 
 }
